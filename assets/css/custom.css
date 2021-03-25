@@ -1,0 +1,45 @@
+.page-header {
+    z-index: 3;
+}
+
+.presentation-title {
+    font-weight: 500;
+}
+
+h5.description {
+    color: #666;
+}
+
+.bg-foob {
+    background-color: #46BFE6!important;
+}
+
+.btn-foob {
+    background-color: #46BFE6;
+}
+
+.icon-foob {
+    color: #46BFE6;
+}
+
+.footer .heart {
+    color: #46BFE6;
+}
+
+#sideimg-left {
+    content: url('../img/fbk/side.gif');
+    width: 5%;
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    z-index: 2;
+}
+
+#sideimg-right {
+    content: url('../img/fbk/oruyanke.png');
+    width: 3%;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 2;
+}
