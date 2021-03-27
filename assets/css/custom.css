@@ -1,3 +1,7 @@
+.dropdown-item:hover {
+    background-color: #46BFE6 !important;
+}
+
 video {
     object-fit: cover;
     width: 100vw;
@@ -50,5 +54,17 @@ h5.description {
     position: fixed;
     bottom: 1%;
     right: 1%;
+    z-index: 2;
+}
+
+/* Profile Section */
+.page-header-profile {
+    background-position: unset;
+    z-index: 0;
+}
+
+.profile-content {
+    padding-top: 0;
+    position: relative;
     z-index: 2;
 }
