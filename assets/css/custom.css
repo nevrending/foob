@@ -2,6 +2,10 @@
     background-color: #46BFE6 !important;
 }
 
+.page-header .filter:after {
+    background-color: rgba(0,0,0,0.35);
+}
+
 video {
     object-fit: cover;
     width: 100vw;
@@ -55,6 +59,10 @@ h5.description {
     bottom: 1%;
     right: 1%;
     z-index: 2;
+}
+
+.section-foob {
+    background-color: #46BFE6;
 }
 
 /* Profile Section */

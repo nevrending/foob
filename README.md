@@ -13,7 +13,7 @@
   <p align="center">
     This a Shirakami Fubuki Fan Site.
     <br>
-    <a href="https://docs.google.com/document/d/1wnTds0HMesNDvEDTzvfWZQhqzKAFjHsSBJ4sTuOx8kU/edit?usp=sharing" target="_blank"><strong>Explore the Project Docs (G-Docs) »</strong></a>
+    <a href="https://docs.google.com/document/d/1wnTds0HMesNDvEDTzvfWZQhqzKAFjHsSBJ4sTuOx8kU/edit?usp=sharing" target="_blank"><strong>Explore the Project Docs (G-Docs) &raquo;</strong></a>
     <br>
     <br>
     <a href="https://foob.moe">Visit Site</a>
