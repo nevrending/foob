@@ -43,6 +43,10 @@ h5.description {
     color: #46BFE6;
 }
 
+.footer-nav, .footer .credits {
+    line-height: 20px;
+}
+
 #sideimg-left {
     content: url('../img/fbk/side.gif');
     width: 5%;
