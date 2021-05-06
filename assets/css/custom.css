@@ -21,6 +21,10 @@ video {
 
 .presentation-title {
     font-weight: 500;
+	font-size: 5.5rem;
+	background: linear-gradient(180deg,#fff 35%,#8fb2c3);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 h5.description {
