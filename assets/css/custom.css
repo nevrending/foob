@@ -15,6 +15,14 @@ video {
     left: 0;
 }
 
+@media screen and (max-width: 768px) {
+  video {
+	min-width: 320px;
+    width: 200vw;
+    left: -20rem;
+  }
+}
+
 .page-header {
     z-index: 3;
 }
@@ -25,6 +33,14 @@ video {
 	background: linear-gradient(180deg,#fff 35%,#8fb2c3);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	line-height: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .presentation-title {
+	font-size: 3.5rem;
+	line-height: 5rem;
+  }
 }
 
 h5.description {
