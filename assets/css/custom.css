@@ -38,8 +38,8 @@ video {
 
 @media screen and (max-width: 767px) {
   .presentation-title {
-	font-size: 3.5rem;
-	line-height: 5rem;
+    font-size: 3.5rem;
+    line-height: 5rem;
   }
 }
 
