@@ -102,6 +102,21 @@ h5.description {
 }
 
 .row-git-footer {
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+#sideimg-left {
+    content: url('../img/fbk/side.gif');
+    width: 5%;
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    z-index: 2;
+}
+
+.row-git-footer {
     flex-direction: column;
     align-content: center;
     align-items: center;
