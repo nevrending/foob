@@ -17,7 +17,7 @@ video {
 
 @media screen and (max-width: 768px) {
   video {
-	min-width: 320px;
+    min-width: 320px;
     width: 200vw;
     left: -20rem;
   }
