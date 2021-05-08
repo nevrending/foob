@@ -67,6 +67,12 @@ h5.description {
     line-height: 20px;
 }
 
+.row-git-footer {
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
 #sideimg-left {
     content: url('../img/fbk/side.gif');
     width: 5%;
