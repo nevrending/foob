@@ -1,3 +1,23 @@
+/* Globals */
+#sideimg-left {
+    content: url('../img/fbk/side.gif');
+    width: 5%;
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    z-index: 2;
+}
+
+#sideimg-right {
+    content: url('../img/fbk/favicon-oruyanke.png');
+    width: 3.5%;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 2;
+}
+
+/* Menu */
 .dropdown-item:hover {
     background-color: #46BFE6 !important;
 }
@@ -6,6 +26,7 @@
     background-color: rgba(0,0,0,0.35);
 }
 
+/* Home - Hero */
 video {
     object-fit: cover;
     width: 100vw;
@@ -37,18 +58,19 @@ video {
 }
 
 @media screen and (max-width: 767px) {
-  .presentation-title {
-    font-size: 3.5rem;
-    line-height: 5rem;
-  }
+    .presentation-title {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
 }
 
+/* Section */
 h5.description {
     color: #666;
 }
 
 .bg-foob {
-    background-color: #46BFE6!important;
+    background-color: #46BFE6 !important;
 }
 
 .btn-foob {
@@ -59,6 +81,7 @@ h5.description {
     color: #46BFE6;
 }
 
+/* Footer */
 .footer .heart {
     color: #46BFE6;
 }
@@ -67,28 +90,14 @@ h5.description {
     line-height: 20px;
 }
 
+.footer-cover-copy {
+    display: inline-block;
+}
+
 .row-git-footer {
-	flex-direction: column;
-	align-content: center;
-	align-items: center;
-}
-
-#sideimg-left {
-    content: url('../img/fbk/side.gif');
-    width: 5%;
-    position: fixed;
-    bottom: 1%;
-    left: 0;
-    z-index: 2;
-}
-
-#sideimg-right {
-    content: url('../img/fbk/favicon-oruyanke.png');
-    width: 3.5%;
-    position: fixed;
-    bottom: 1%;
-    right: 1%;
-    z-index: 2;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .section-foob {
@@ -105,4 +114,20 @@ h5.description {
     padding-top: 0;
     position: relative;
     z-index: 2;
+}
+
+/* Contributors Section */
+h4.contributors-title {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #66615b;
+    text-decoration-thickness: 1px;
+}
+
+a.reverse-foob {
+    color: #66615b;
+}
+
+a.reverse-foob:hover {
+    color: #fff;
 }
