@@ -109,7 +109,8 @@ Code of the site is distributed under the above License. See `LICENSE` for more 
 
 ## Contributors
 
-* Be the first!
+- Nyan (codes)
+- Berserking Asura (noises files)
 
 [contributors-shield]: https://img.shields.io/github/contributors/nevrending/foob?style=for-the-badge
 [contributors-url]: https://github.com/nevrending/foob/graphs/contributors
