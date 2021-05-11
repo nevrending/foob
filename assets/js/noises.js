@@ -1,36 +1,29 @@
-const soundsElement = document.querySelector('.sound-buttons');
+const soundsElement = document.querySelector('#sound-container');
+
 (async () => {
     const sounds = await loadSounds();
     addSoundsToPage(sounds)
 })();
 
-/**
- *  @returns {Object}
-*/
 async function loadSounds() {
-    const response = await fetch("assets/etc/sounds.json")
+    const response = await fetch("sounds.json")
     const json = await response.json()
     return json;
 }
 
-/**
- *  @param {Object} sounds - JSON-type list of fbk noises.
- *  @param {string} sounds.title - FBK noise title.
- *  @param {string} sounds.src - FBK noise URL.
- */
 function addSoundsToPage(sounds) {
     sounds.forEach(sound => {
         const soundButton = document.createElement("button")
-        soundButton.className = "col btn btn-info sound-button"
+        soundButton.className = "btn btn-info btn-round btn-foob"
         soundButton.textContent = sound.title;
-        soundsElement.appendChild(soundButton) //the button is now the first and the last element in the list
-
+        
         const player = document.createElement("audio")
-        soundButton.appendChild(player)  //audio inside button.
-        player.setAttribute('preload', 'none')
-        player.setAttribute("src", `assets/aud/fbk/noises/${sound.src}`)
+        soundsElement.appendChild(player)
+        player.setAttribute("src", `assets/audio/${sound.src}`)
+        
         soundButton.addEventListener('click', () => {
             player.play();
         });
+        soundsElement.appendChild(soundButton)    
     });
 }
