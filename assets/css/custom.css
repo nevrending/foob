@@ -76,3 +76,17 @@ h5.description {
     position: relative;
     z-index: 2;
 }
+
+.sound-container {
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    width: 300px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sound-container:not(:first-child) {
+    margin-left: 30px;
+}
