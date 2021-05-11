@@ -12,7 +12,7 @@ async function loadSounds() {
 function addSoundsToPage(sounds) {
   sounds.forEach(sound => {
     const soundButton = document.createElement("button") 
-    soundButton.className = "btn btn-info btn-round btn-foob"
+    soundButton.className = "btn btn-info btn-round sound-button"
     soundButton.textContent = sound.title;
     const player = document.createElement("audio") 
     soundsElement.appendChild(player) 
