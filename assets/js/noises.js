@@ -1,4 +1,4 @@
-const soundsElement = document.querySelector('#sound-container');
+const soundsElement = document.querySelector('.sound-container');
 
 (async () => {
     const sounds = await loadSounds();
