@@ -89,5 +89,5 @@ h5.description {
 }
 
 .sound-button:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 10px;
 }
