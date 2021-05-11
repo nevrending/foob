@@ -78,15 +78,16 @@ h5.description {
 }
 
 .sound-container {
-    border-radius: 20px;
-    background-color: #f3f3f3;
-    width: 300px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  width: 300px;
+  padding: 10px;
 }
 
 .sound-container:not(:first-child) {
-    margin-left: 30px;
+  margin-left: 30px;
+}
+
+.sound-button:not(:first-child) {
+  margin-left: 20px;
 }
