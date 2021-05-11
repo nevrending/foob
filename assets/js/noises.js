@@ -14,7 +14,8 @@ function addSoundsToPage(sounds) {
     const soundButton = document.createElement("button") 
     soundButton.className = "btn btn-info btn-round btn-foob"
     soundButton.textContent = sound.title;
-    const player = document.createElement("audio") soundsElement.appendChild(player) 
+    const player = document.createElement("audio") 
+    soundsElement.appendChild(player) 
     player.setAttribute("src", `assets/audio/${sound.src}`)
     
     soundButton.addEventListener('click', () => {
