@@ -15,12 +15,32 @@ video {
     left: 0;
 }
 
+@media screen and (max-width: 768px) {
+  video {
+    min-width: 320px;
+    width: 200vw;
+    left: -20rem;
+  }
+}
+
 .page-header {
     z-index: 3;
 }
 
 .presentation-title {
     font-weight: 500;
+    font-size: 5.5rem;
+    background: linear-gradient(180deg,#fff 35%,#8fb2c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .presentation-title {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
 }
 
 h5.description {
@@ -41,6 +61,16 @@ h5.description {
 
 .footer .heart {
     color: #46BFE6;
+}
+
+.footer-nav, .footer .credits {
+    line-height: 20px;
+}
+
+.row-git-footer {
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
 }
 
 #sideimg-left {
@@ -75,6 +105,7 @@ h5.description {
     padding-top: 0;
     position: relative;
     z-index: 2;
+  
 }
 
 /* Noises section */
