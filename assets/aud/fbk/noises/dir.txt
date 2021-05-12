@@ -1,0 +1,48 @@
+ Volume in drive D is Data1
+ Volume Serial Number is D033-EB86
+
+ Directory of d:\GeetCloneRepo\foob\assets\aud\fbk\noises
+
+12-May-21  22:31    <DIR>          .
+12-May-21  22:31    <DIR>          ..
+12-May-21  22:25            89,125 123-i-am-french-boy-kun.mp3
+12-May-21  22:25           681,261 amazing-grace.mp3
+12-May-21  22:25         1,788,793 ara-ara.mp3
+12-May-21  22:25           551,216 bbb.mp3
+12-May-21  22:31                 0 dir.txt
+12-May-21  22:25           385,744 dododo.mp3
+12-May-21  22:25           279,134 drumroll.mp3
+12-May-21  22:25           108,390 f.mp3
+12-May-21  22:25           275,974 foob-wake-up.mp3
+12-May-21  22:25           191,990 fubu-cry.mp3
+12-May-21  22:25           788,826 get-rekt.mp3
+12-May-21  22:25           144,724 hallelujah.mp3
+12-May-21  22:25            84,907 hi-friends.mp3
+12-May-21  22:25            46,228 hololaivu.mp3
+12-May-21  22:25           152,554 hug-me.mp3
+12-May-21  22:25           103,601 is-france-boy.mp3
+12-May-21  22:25           506,077 mane-chan.mp3
+12-May-21  22:25           366,720 murasaki.mp3
+12-May-21  22:25           355,200 mwah.mp3
+12-May-21  22:25            35,255 nani.mp3
+12-May-21  22:25           106,578 o-shit-a-bridge.mp3
+12-May-21  22:25           146,582 officer-fbk-is-on-job.mp3
+12-May-21  22:25            48,839 oh-yes.mp3
+12-May-21  22:25            91,951 pachi.mp3
+12-May-21  22:25           262,508 pikmin.mp3
+12-May-21  22:25            33,837 piss-off.mp3
+12-May-21  22:25         2,215,571 platinum-fox-fbk-solo-mixdown.mp3
+12-May-21  22:25           625,086 sss.mp3
+12-May-21  22:25            45,277 strongest.mp3
+12-May-21  22:25            68,274 sweet-good-morning.mp3
+12-May-21  22:25         1,488,000 tantrum.mp3
+12-May-21  22:25           901,440 turnip-scream.mp3
+12-May-21  22:25           872,640 ventilating-2.mp3
+12-May-21  22:25           422,066 wasureru-beam.mp3
+12-May-21  22:25           479,040 watch-her-only.mp3
+12-May-21  22:25            51,009 welcome-to-my-island.mp3
+12-May-21  22:25            25,267 whoa.mp3
+12-May-21  22:25            40,750 wow.mp3
+12-May-21  22:25            42,077 zilla-gaoooo.ogg
+              39 File(s)     14,902,511 bytes
+               2 Dir(s)  286,594,883,584 bytes free
