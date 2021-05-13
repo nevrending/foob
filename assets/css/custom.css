@@ -64,13 +64,6 @@ video {
     }
 }
 
-@media screen and (max-width: 767px) {
-    .presentation-title {
-        font-size: 3.5rem;
-        line-height: 5rem;
-    }
-}
-
 /* Section */
 h5.description {
     color: #666;
@@ -99,21 +92,6 @@ h5.description {
 
 .footer-cover-copy {
     display: inline-block;
-}
-
-.row-git-footer {
-	flex-direction: column;
-	align-content: center;
-	align-items: center;
-}
-
-#sideimg-left {
-    content: url('../img/fbk/side.gif');
-    width: 5%;
-    position: fixed;
-    bottom: 1%;
-    left: 0;
-    z-index: 2;
 }
 
 .row-git-footer {
@@ -165,7 +143,7 @@ a.reverse-foob:hover {
 
 .sound-container-row {
     display: -webkit-flex;
-	display: flex;
+    display: flex;
     background-color: #f3f3f3;
     padding: 5px;
     align-content: center;
