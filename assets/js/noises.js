@@ -1,4 +1,4 @@
-const soundsElement = $('#sound-buttons');
+const soundsElement = document.querySelector('#sound-buttons');
 (async () => {
     const sounds = await loadSounds();
     addSoundsToPage(sounds)
@@ -20,12 +20,17 @@ async function loadSounds() {
  */
 function addSoundsToPage(sounds) {
     sounds.forEach(sound => {
-        const soundButton = $(`<button class="col btn btn-info sound-button">${sound.title}</button>`)
-        soundButton.click(() => {
+        const soundButton = document.createElement("button")
+        soundButton.className = "col btn btn-info sound-button"
+        soundButton.textContent = sound.title;
+        soundsElement.appendChild(soundButton) //the button is now the first and the last element in the list
+
+        const player = document.createElement("audio")
+        soundButton.appendChild(player)  //audio inside button.
+
+        player.setAttribute("src", `assets/aud/fbk/noises/${sound.src}`)
+        soundButton.addEventListener('click', () => {
             player.play();
-        })
-        soundsElement.append(soundButton) //the button is now the first and the last element in the list
-        const player = $(`<audio src="assets/aud/fbk/noises/${sound.src}">`)
-        soundButton.append(player)  //audio inside button.
+        });
     });
 }
