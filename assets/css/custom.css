@@ -1,48 +1,4 @@
-.dropdown-item:hover {
-    background-color: #46BFE6 !important;
-}
-
-.page-header .filter:after {
-    background-color: rgba(0,0,0,0.35);
-}
-
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.page-header {
-    z-index: 3;
-}
-
-.presentation-title {
-    font-weight: 500;
-}
-
-h5.description {
-    color: #666;
-}
-
-.bg-foob {
-    background-color: #46BFE6!important;
-}
-
-.btn-foob {
-    background-color: #46BFE6;
-}
-
-.icon-foob {
-    color: #46BFE6;
-}
-
-.footer .heart {
-    color: #46BFE6;
-}
-
+/* Globals */
 #sideimg-left {
     content: url('../img/fbk/side.gif');
     width: 5%;
@@ -61,6 +17,89 @@ h5.description {
     z-index: 2;
 }
 
+/* Menu */
+.dropdown-item:hover {
+    background-color: #46BFE6 !important;
+}
+
+.page-header .filter:after {
+    background-color: rgba(0,0,0,0.35);
+}
+
+/* Home - Hero */
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    video {
+        min-width: 320px;
+        width: 200vw;
+        left: -20rem;
+    }
+}
+
+.page-header {
+    z-index: 3;
+}
+
+.presentation-title {
+    font-weight: 500;
+    font-size: 5.5rem;
+    background: linear-gradient(180deg,#fff 35%,#8fb2c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+    .presentation-title {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+}
+
+/* Section */
+h5.description {
+    color: #666;
+}
+
+.bg-foob {
+    background-color: #46BFE6 !important;
+}
+
+.btn-foob {
+    background-color: #46BFE6;
+}
+
+.icon-foob {
+    color: #46BFE6;
+}
+
+/* Footer */
+.footer .heart {
+    color: #46BFE6;
+}
+
+.footer-nav, .footer .credits {
+    line-height: 20px;
+}
+
+.footer-cover-copy {
+    display: inline-block;
+}
+
+.row-git-footer {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
 .section-foob {
     background-color: #46BFE6;
 }
@@ -77,17 +116,62 @@ h5.description {
     z-index: 2;
 }
 
-.sound-container {
-    border-radius: 20px;
+/* Contributors Section */
+h4.contributors-title {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #66615b;
+    text-decoration-thickness: 1px;
+}
+
+a.reverse-foob {
+    color: #66615b;
+}
+
+a.reverse-foob:hover {
+    color: #fff;
+}
+
+/* Noises Section */
+.sound-container-col{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.sound-container-row {
+    display: -webkit-flex;
+    display: flex;
     background-color: #f3f3f3;
-    width: 300px;
-    padding: 10px;
+    padding: 5px;
+    align-content: center;
+    align-items: center;
 }
 
-.sound-container:not(:first-child) {
-    margin-left: 30px;
+/* accommodating small screens*/
+@media screen and (max-width: 400px) {
+    .sound-container-row {
+        background-color: #f3f3f3;
+        padding: 5px;
+        align-content: center;
+        align-items: center;
+    }
 }
 
-.sound-button:not(:first-child) {
-    margin-left: 10px;
+.sound-button{
+    /* The base value for width - actual value changes with container size. */
+    /* rem is basically root font size, which in this page seems to be 1rem = 12 px */
+    flex-basis: 6rem;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    font-size: 1rem; /* it seems 1rem = 12 px */
+    border-radius: 25px;
+    border-color: #000000;
+    border-width:.05rem; /* 0.05 x 12px = 0.6px */
+    margin: .20rem; /* 0.2 x 12px = 2.4px */
+    padding-right: 0px; /* padding interferes with self-centering */
+    padding-left: 0px; /* padding interferes with self-centering */
 }
