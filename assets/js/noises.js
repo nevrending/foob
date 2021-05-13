@@ -21,11 +21,12 @@ async function loadSounds() {
 function addSoundsToPage(sounds) {
     sounds.forEach(sound => {
         const soundButton = $(`<button class="col btn btn-info sound-button">${sound.title}</button>`)
-        soundButton.click(() => {
-            player.play();
-        })
         soundsElement.append(soundButton) //the button is now the first and the last element in the list
         const player = $(`<audio src="assets/aud/fbk/noises/${sound.src}">`)
-        soundButton.append(player)  //audio inside button.
+		soundButton.append(player)  //audio inside button.
+        soundButton.addEventListener('click', () => {
+            player.play();
+        });
+
     });
 }
