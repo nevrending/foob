@@ -37,11 +37,11 @@ video {
 }
 
 @media screen and (max-width: 768px) {
-  video {
-    min-width: 320px;
-    width: 200vw;
-    left: -20rem;
-  }
+    video {
+        min-width: 320px;
+        width: 200vw;
+        left: -20rem;
+    }
 }
 
 .page-header {
@@ -130,4 +130,48 @@ a.reverse-foob {
 
 a.reverse-foob:hover {
     color: #fff;
+}
+
+/* Noises Section */
+.sound-container-col{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.sound-container-row {
+    display: -webkit-flex;
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+}
+
+/* accommodating small screens*/
+@media screen and (max-width: 400px) {
+    .sound-container-row {
+        background-color: #f3f3f3;
+        padding: 5px;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+.sound-button{
+    /* The base value for width - actual value changes with container size. */
+    /* rem is basically root font size, which in this page seems to be 1rem = 12 px */
+    flex-basis: 6rem;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    font-size: 1rem; /* it seems 1rem = 12 px */
+    border-radius: 25px;
+    border-color: #000000;
+    border-width:.05rem; /* 0.05 x 12px = 0.6px */
+    margin: .20rem; /* 0.2 x 12px = 2.4px */
+    padding-right: 0px; /* padding interferes with self-centering */
+    padding-left: 0px; /* padding interferes with self-centering */
 }
