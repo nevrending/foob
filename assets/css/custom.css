@@ -182,8 +182,9 @@ a.reverse-foob:hover {
     margin: .20rem; /* 0.2 x 16px = 2.4px */
     padding: 10px;
 }
+
 /* CSS-based button icon */
-.player-button-play{
+.player-button-play-icon{
     width: 0;
     height: 0;
     border-top: 0.5rem solid transparent;
@@ -211,7 +212,7 @@ a.reverse-foob:hover {
     vertical-align:text-top;
     margin-right:10px;
 }
-.player-button-stop{
+.player-button-stop-icon{
     width:1rem;
     height:1rem;
     background-color: #f00; 
