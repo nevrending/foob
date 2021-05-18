@@ -27,7 +27,7 @@ function addSoundsToPage(sounds) {
 
         const player = document.createElement("audio")
         soundButton.appendChild(player)  //audio inside button.
-
+        player.setAttribute('preload', 'none')
         player.setAttribute("src", `assets/aud/fbk/noises/${sound.src}`)
         soundButton.addEventListener('click', () => {
             player.play();
