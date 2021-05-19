@@ -175,3 +175,7 @@ a.reverse-foob:hover {
     padding-right: 0px; /* padding interferes with self-centering */
     padding-left: 0px; /* padding interferes with self-centering */
 }
+.page-header-sound {
+    background-position: unset;
+    z-index: -1; /* open to change if anyone wants to do so */
+}
