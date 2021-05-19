@@ -133,7 +133,7 @@ a.reverse-foob:hover {
 }
 
 /* Noises Section */
-.sound-container-col{
+.sound-container-col {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -150,28 +150,90 @@ a.reverse-foob:hover {
     align-items: center;
 }
 
-/* accommodating small screens*/
+/* accommodating small screens */
 @media screen and (max-width: 400px) {
     .sound-container-row {
         background-color: #f3f3f3;
         padding: 5px;
         align-content: center;
         align-items: center;
+        margin-bottom: 10px;
     }
 }
 
-.sound-button{
+.player-container {
+    padding: 5px;
+}
+
+/* Player Buttons */
+.player-button {
+    /* The base value for width - actual value changes with container size. */
+    /* rem is basically root font size, which in this page seems to be 1rem = 16 px */
+    flex-basis: 6rem;
+    width: 10rem;
+    height: 3rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.833rem; /* it seems 0.833 x 16px = ~10 px */
+    border-radius: 25px;
+    border-color: #000000;
+    border-width:.05rem; /* 0.05 x 16px = 0.6px */
+    margin: .20rem; /* 0.2 x 16px = 2.4px */
+    padding: 10px;
+}
+
+/* CSS-based button icon */
+.player-button-play-icon {
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid transparent;
+    border-left: 1rem solid #555;
+    border-bottom: 0.5rem solid transparent;
+    display:inline-block;
+    margin-right:10px;
+    vertical-align:text-top;
+}
+.player-button-pause-left-icon {
+    width:0.3rem;
+    height:1rem;
+    background-color: #000;
+    align-content: center;
+    display:inline-block;
+    vertical-align:text-top;
+    margin-right:3px;
+}
+.player-button-pause-right-icon {
+    width:0.3rem;
+    height:1rem;
+    background-color: #000;
+    align-content: center;
+    display:inline-block;
+    vertical-align:text-top;
+    margin-right:10px;
+}
+.player-button-stop-icon {
+    width:1rem;
+    height:1rem;
+    background-color: #f00;
+    align-content: center;
+    display:inline-block;
+    margin:0px 10px;
+    vertical-align:text-top;
+}
+
+.sound-button {
     /* The base value for width - actual value changes with container size. */
     /* rem is basically root font size, which in this page seems to be 1rem = 12 px */
     flex-basis: 6rem;
     width: 6rem;
     height: 6rem;
     text-align: center;
-    font-size: 1rem; /* it seems 1rem = 12 px */
+    font-size: 0.833rem; /* it seems 0.833 x 12px = ~10 px */
     border-radius: 25px;
     border-color: #000000;
     border-width:.05rem; /* 0.05 x 12px = 0.6px */
     margin: .20rem; /* 0.2 x 12px = 2.4px */
-    padding-right: 0px; /* padding interferes with self-centering */
-    padding-left: 0px; /* padding interferes with self-centering */
+    padding-right: 3px; /* padding makes the texts look better */
+    padding-left: 3px; /* padding makes the texts look better */
 }
