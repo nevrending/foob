@@ -34,3 +34,9 @@ function addSoundsToPage(sounds) {
         });
     });
 }
+function stopAudio() {
+	$("audio").each(function() {
+		this.pause()
+		this.currentTime = 0;
+	})
+}
