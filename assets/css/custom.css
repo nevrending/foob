@@ -237,3 +237,7 @@ a.reverse-foob:hover {
     padding-right: 3px; /* padding makes the texts look better */
     padding-left: 3px; /* padding makes the texts look better */
 }
+.page-header-sound {
+    background-position: unset;
+    z-index: -1; /* open to change if anyone wants to do so */
+}
