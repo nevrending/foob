@@ -70,6 +70,24 @@
       <h4 class="title"><strong>Fox Soundboard</strong></h4>
       <div class="col sound-container-col">
         <h5>Kon Kon Kitsu-ne</h5>
+        <div class="row sound-container-row player-container">
+          <!-- player-button-play is purely for javascript selectors-->
+          <div class="col btn btn-info player-button player-button-play">
+            <div class="player-button-play-icon"></div>
+            Play
+          </div>
+          <!-- player-button-pause is purely for javascript selectors-->
+          <div class="col btn btn-info player-button player-button-pause">
+            <div class="player-button-pause-left-icon"></div>
+            <div class="player-button-pause-right-icon"></div>
+            Pause
+          </div>
+          <!-- player-button-stop is purely for javascript selectors-->
+          <div class="col btn btn-info player-button player-button-stop" onclick="stopAudio()">
+            <div class="player-button-stop-icon"></div>
+            Stop
+          </div>
+        </div>
         <div class="row sound-container-row sound-buttons"></div>
       </div>
     </div>
