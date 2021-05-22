@@ -40,4 +40,9 @@ function addSoundsToPage(sounds) {
         });
     });
 }
-
+function playRandom() {
+    const playerList = $("audio")
+    const audioRandom = Math.floor(Math.random() * playerList.length)
+    stopAudio()
+    $("audio")[audioRandom].play()
+}
