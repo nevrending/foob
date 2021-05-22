@@ -1,6 +1,6 @@
 /* Globals */
 #sideimg-left {
-    content: url('../img/fbk/side.gif');
+    content: url('../img/fbk/side-edit-01.gif');
     width: 5%;
     position: fixed;
     bottom: 1%;
@@ -62,6 +62,10 @@ video {
         font-size: 3.5rem;
         line-height: 5rem;
     }
+}
+
+.twitter-timeline {
+    grid-column: 1/2;
 }
 
 /* Section */
