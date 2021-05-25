@@ -1,6 +1,6 @@
 /* Globals */
 #sideimg-left {
-    content: url('../img/fbk/side-edit-res.gif');
+    content: url('../img/fbk/side-left.gif');
     width: 5%;
     position: fixed;
     bottom: 1%;
@@ -68,58 +68,53 @@ video {
     grid-column: 1/2;
 }
 
-/* Annoucement */
-.annoucement {
+/* Home - Announcement */
+.announcement {
     /* padding will make the space for words about 150px in height
-    and 70% of the screen width */    
-    padding: 75px 15%; 
+    and 70% of the screen width */
+    padding: 75px 15%;
     width: 100%;
     max-width: none; /* turns off the default max-width from bootstrap */
-    height: 300px; /* feel free to change this */
     align-items: center; /* extra insurace to ensure everything is center */
     /* I don't think it will ever happen, but this is a precaution if
     the inner member uses position : absolute and mess up with the sizes */
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.from1st {
-    /* A special class for making the "letter-like" border you see at the main 
-    from1st website. The theme color, bg color, and other objects together are 
+.announcement.from1st {
+    /* A special class for making the "letter-like" border you see at the main
+    from1st website. The theme color, bg color, and other objects together are
     quite unique to this "from1st" project, so if you're inspired by them,
     do include hololive's main website or from1st website in your credits. */
-    background-image : url('../img/fbk/ogp.jpg');
+    background-image: url('../img/fbk/ogp.jpg');
     background-size: cover; /* fit to container size */
     background-repeat: no-repeat;
+    background-color: var(--bg_color); /* precautions in case the image failed */
     --theme_color: #ee768e;
     --bg_color: #fffffa;
-    border: 25px solid var(--theme_color);
+    border: 22px solid var(--theme_color);
     /* Look for "Repeating Linear Gradient Zebra Stripes" at google.
     Rotation value must be 45 degree. The size of the  */
-    border-image-source : repeating-linear-gradient (
-        -45deg, 
-        var(--theme_color) 0px 24px, /* start at 0, end at 24 px */
-        var(--bg_color) 24px, /* start at 24 px... */
-        var(--bg_color) 48px /* this must be about twice than the other values */
+    border-image-source: repeating-linear-gradient(
+        -45deg,
+        var(--theme_color) 0px 22px, /* start at 0, end at 24 px */
+        var(--bg_color) 22px 44px /* start at 24 px and this must be about twice than the other values */
     );
-    background-color: var(--bg_color); /* precautions in case the image failed */
-    border-image-slice: 27; /* this is a magic number */
+    border-image-slice: 22; /* make this = to border thickness */
 }
 
 @media screen and (max-width: 768px) {
-    .from1st {
-        --theme_color: #ee768e;
-        --bg_color: #fffffa;
+    .announcement.from1st {
         border: 12px solid var(--theme_color);
-        border-image-source : repeating-linear-gradient(-45deg, var(--theme_color), var(--theme_color) 24px, var(--bg_color) 24px, var(--bg_color) 44px );
-        background-color: var(--bg_color);
+        border-image-source: repeating-linear-gradient(-45deg, var(--theme_color) 0px 22px, var(--bg_color) 22px 44px);
         border-image-slice: 12; /* this is a magic number */
     }
 }
 
-.text-container {
+.announcement.from1st .container {
     background-color: rgba(255,255,255,0.65); /* white transparent bg */
 }
-.from1st .title-text {
+.announcement.from1st .title {
     /* just for this one, don't use H2. */
     color: var(--theme_color);
     margin: 0px 0px;
