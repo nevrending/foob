@@ -6,4 +6,6 @@ function rotateImage() {
     if (imgI > 3) imgI = 1
     yosettiImage.src = `assets/img/fbk/pg${imgI}.png`
 }
-setInterval(rotateImage(), 10000);
+window.onload = function() {
+    setInterval(rotateImage, 10000);
+};
