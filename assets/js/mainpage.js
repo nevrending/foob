@@ -1,4 +1,4 @@
-const yosettiImage = document.getElementById("#yosetti")
+const yosettiImage = document.getElementById("yosetti")
 let imgI = 1
 
 function rotateImage() {
