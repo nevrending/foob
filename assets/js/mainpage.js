@@ -1,4 +1,6 @@
 const yosettiImage = document.getElementById("yosetti")
+const bgVid = document.getElementById("bgvid")
+
 let imgI = 1
 
 function rotateImage() {
@@ -7,5 +9,10 @@ function rotateImage() {
     yosettiImage.src = `assets/img/fbk/pg${imgI}.png`
 }
 window.onload = function() {
-    setInterval(rotateImage, 10000);
+    setInterval(rotateImage, 1000);
 };
+
+function playVideo() {
+    bgVid.muted = true;
+    bgVid.play()
+}
