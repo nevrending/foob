@@ -237,3 +237,8 @@ a.reverse-foob:hover {
     padding-right: 3px; /* padding makes the texts look better */
     padding-left: 3px; /* padding makes the texts look better */
 }
+
+#yosetti {
+    margin-left: auto;
+    margin-right: auto;
+}
