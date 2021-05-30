@@ -1,9 +1,9 @@
 const yosettiImage = document.getElementById("#yosetti")
 let imgI = 1
 
-function rotateImage(direction) {
-    imgI += direction
+function rotateImage() {
+    ++imgI
     if (imgI > 3) imgI = 1
-    if (imgI < 1) imgI = 3
     yosettiImage.src = `assets/img/pg${imgI}.png`
 }
+setInterval(rotateImage(), 10000);
