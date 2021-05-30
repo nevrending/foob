@@ -5,5 +5,5 @@ function rotateImage(direction) {
     imgI += direction
     if (imgI > 3) imgI = 1
     if (imgI < 1) imgI = 3
-    yosettiImage.src = `pg${imgI}.png`
+    yosettiImage.src = `assets/img/pg${imgI}.png`
 }
