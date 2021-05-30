@@ -9,7 +9,7 @@ function rotateImage() {
     yosettiImage.src = `assets/img/fbk/pg${imgI}.png`
 }
 window.onload = function() {
-    setInterval(rotateImage, 1000);
+    setInterval(rotateImage, 5000);
 };
 
 function playVideo() {
