@@ -11,7 +11,3 @@ function rotateImage() {
 window.onload = function() {
     setInterval(rotateImage, 5000);
 };
-bgVid.oncanplaythrough = function() {
-    bgVid.muted = true;
-    bgVid.play();
-}
