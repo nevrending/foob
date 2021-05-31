@@ -45,7 +45,7 @@ video {
 }
 
 .page-header {
-    z-index: 1;
+    z-index: 3;
 }
 
 .presentation-title {
@@ -241,7 +241,4 @@ a.reverse-foob:hover {
 #yosetti {
     margin-left: auto;
     margin-right: auto;
-}
-#sukontitle {
-    position:static;
 }
