@@ -305,3 +305,8 @@ a.reverse-foob:hover {
     padding-top: 10px;
     margin-top: 0;
 }
+
+.mascot-img {
+    margin: auto;
+    padding-bottom: 20px;
+}
