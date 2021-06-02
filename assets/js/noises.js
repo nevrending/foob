@@ -1,4 +1,4 @@
-const soundsElement = document.querySelector('#sound-buttons');
+const soundsElement = document.querySelector('.sound-buttons');
 (async () => {
     const sounds = await loadSounds();
     addSoundsToPage(sounds)
