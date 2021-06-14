@@ -35,7 +35,7 @@ function addSoundsToPage(sounds) {
 
         player.setAttribute("src", `assets/aud/fbk/noises/${sound.src}`)
         soundButton.addEventListener('click', () => {
-			stopAudio();
+            stopAudio();
             player.play();
         });
     });

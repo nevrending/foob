@@ -1,6 +1,6 @@
 /* Globals */
 #sideimg-left {
-    content: url('../img/fbk/side.gif');
+    content: url('../img/fbk/side-left.gif');
     width: 5%;
     position: fixed;
     bottom: 1%;
@@ -62,6 +62,65 @@ video {
         font-size: 3.5rem;
         line-height: 5rem;
     }
+}
+
+.twitter-timeline {
+    grid-column: 1/2;
+}
+
+/* Home - Announcement */
+.announcement {
+    /* padding will make the space for words about 150px in height
+    and 70% of the screen width */
+    padding: 75px 15%;
+    width: 100%;
+    max-width: none; /* turns off the default max-width from bootstrap */
+    align-items: center; /* extra insurace to ensure everything is center */
+    /* I don't think it will ever happen, but this is a precaution if
+    the inner member uses position : absolute and mess up with the sizes */
+    overflow: hidden;
+}
+
+.announcement.from1st {
+    /* A special class for making the "letter-like" border you see at the main
+    from1st website. The theme color, bg color, and other objects together are
+    quite unique to this "from1st" project, so if you're inspired by them,
+    do include hololive's main website or from1st website in your credits. */
+    background-image: url('../img/fbk/ogp.jpeg');
+    background-position: 38% top;
+    background-size: cover; /* fit to container size */
+    background-repeat: no-repeat;
+    background-color: var(--bg_color); /* precautions in case the image failed */
+    --theme_color: #ee768e;
+    --bg_color: #fffffa;
+    border: 22px solid var(--theme_color);
+    /* Look for "Repeating Linear Gradient Zebra Stripes" at google.
+    Rotation value must be 45 degree. The size of the  */
+    border-image-source: repeating-linear-gradient(
+        -45deg,
+        var(--theme_color) 0px 22px, /* start at 0, end at 24 px */
+        var(--bg_color) 22px 44px /* start at 24 px and this must be about twice than the other values */
+    );
+    border-image-slice: 22; /* make this = to border thickness */
+}
+
+@media screen and (max-width: 768px) {
+    .announcement.from1st {
+        border: 12px solid var(--theme_color);
+        border-image-source: repeating-linear-gradient(-45deg, var(--theme_color) 0px 22px, var(--bg_color) 22px 44px);
+        border-image-slice: 12; /* this is a magic number */
+    }
+}
+
+.announcement.from1st .container {
+    background-color: rgba(255,255,255,0.65); /* white transparent bg */
+}
+.announcement.from1st .title {
+    /* just for this one, don't use H2. */
+    color: var(--theme_color);
+    margin: 0px 0px;
+    font-size: 2.5rem;
+    font-weight: normal;
 }
 
 /* Section */
