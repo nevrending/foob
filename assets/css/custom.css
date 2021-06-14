@@ -231,7 +231,7 @@ a.reverse-foob:hover {
     /* rem is basically root font size, which in this page seems to be 1rem = 16 px */
     flex-basis: 6rem;
     width: 10rem;
-    height: 3rem;
+    /*height: 3rem;*/
     align-content: center;
     align-items: center;
     text-align: center;
@@ -278,7 +278,7 @@ a.reverse-foob:hover {
     background-color: #f00;
     align-content: center;
     display:inline-block;
-    margin:0px 10px;
+    margin-right: 10px;
     vertical-align:text-top;
 }
 
