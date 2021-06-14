@@ -52,9 +52,9 @@
               Pages
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="javascript:void(0)">Foobs (WIP)</a>
-              <a class="dropdown-item" href="noises.html">Noises</a>
-              <a class="dropdown-item" href="javascript:void(0)">Community (WIP)</a>
+              <a class="dropdown-item" href="mascots.html">Mascots</a>
+              <a class="dropdown-item" href="javascript:void(0)">Noises</a>
+              <a class="dropdown-item" href="sukon.html">Community</a>
             </div>
           </li>
         </ul>
@@ -65,32 +65,25 @@
   <div class="page-header page-header-xs page-header-profile" data-parallax="true" style="background-image: url('assets/img/fbk/bg-noises.png');">
     <div class="filter"></div>
   </div>
+  <div class="section profile-content">
   <div class="container">
     <div class="col sound-container-col">
       <h4 class="title"><strong>Fox Soundboard</strong></h4>
       <div class="col sound-container-col">
-        <h5>Kon Kon Kitsu-ne</h5>
+      <h5>Kon Kon Kitsu-ne</h5> <!--Remove this if you want-->
         <div class="row sound-container-row player-container">
-          <!-- player-button-play is purely for javascript selectors-->
-          <div class="col btn btn-info player-button player-button-play">
-            <div class="player-button-play-icon"></div>
-            Play
-          </div>
-          <!-- player-button-pause is purely for javascript selectors-->
-          <div class="col btn btn-info player-button player-button-pause">
-            <div class="player-button-pause-left-icon"></div>
-            <div class="player-button-pause-right-icon"></div>
-            Pause
-          </div>
-          <!-- player-button-stop is purely for javascript selectors-->
-          <div class="col btn btn-info player-button player-button-stop">
+          <div class="col btn btn-info player-button" onclick="stopAudio()">
             <div class="player-button-stop-icon"></div>
             Stop
+          </div>
+          <div class="col btn btn-info player-button" onclick="playRandom()">
+            Random
           </div>
         </div>
         <div class="row sound-container-row sound-buttons"></div>
       </div>
     </div>
+  </div>
   </div>
   <!-- END PAGE -->
   <footer class="footer">

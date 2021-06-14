@@ -12,7 +12,12 @@ async function loadSounds() {
     const json = await response.json()
     return json;
 }
-
+function stopAudio() {
+	$("audio").each(function() {
+		this.pause()
+		this.currentTime = 0;
+	})
+}
 /**
  *  @param {Object} sounds - JSON-type list of fbk noises.
  *  @param {string} sounds.title - FBK noise title.
@@ -27,10 +32,17 @@ function addSoundsToPage(sounds) {
 
         const player = document.createElement("audio")
         soundButton.appendChild(player)  //audio inside button.
-        player.setAttribute('preload', 'none')
+
         player.setAttribute("src", `assets/aud/fbk/noises/${sound.src}`)
         soundButton.addEventListener('click', () => {
+			stopAudio();
             player.play();
         });
     });
+}
+function playRandom() {
+    const playerList = $("audio")
+    const audioRandom = Math.floor(Math.random() * playerList.length)
+    stopAudio()
+    $("audio")[audioRandom].play()
 }
