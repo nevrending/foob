@@ -179,16 +179,17 @@ h5.description {
 h4.contributors-title {
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-color: #66615b;
+    text-decoration-color: #eee;
     text-decoration-thickness: 1px;
+    color: #fff;
 }
 
 a.reverse-foob {
-    color: #66615b;
+    color: #fff;
 }
 
 a.reverse-foob:hover {
-    color: #fff;
+    color: #ddd;
 }
 
 /* Noises Section */
@@ -295,4 +296,15 @@ a.reverse-foob:hover {
     margin: .20rem; /* 0.2 x 12px = 2.4px */
     padding-right: 3px; /* padding makes the texts look better */
     padding-left: 3px; /* padding makes the texts look better */
+}
+
+#yosetti {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mascot-img {
+    display: block;
+    margin:auto;
+    padding-bottom: 20px;
 }
