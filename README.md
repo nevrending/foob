@@ -105,7 +105,6 @@ Code of the site is distributed under the above License. See `LICENSE` for more 
 ## Contact
 
 - Open an [Issue](https://github.com/nevrending/foob/issues)
-***REMOVED***
 
 ## Contributors
 
