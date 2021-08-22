@@ -86,7 +86,7 @@ video {
     from1st website. The theme color, bg color, and other objects together are
     quite unique to this "from1st" project, so if you're inspired by them,
     do include hololive's main website or from1st website in your credits. */
-    background-image: url('../img/fbk/ogp.jpeg');
+    background-image: url('../img/fbk/ogp.jpg');
     background-position: 38% top;
     background-size: cover; /* fit to container size */
     background-repeat: no-repeat;
